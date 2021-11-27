@@ -14,12 +14,14 @@ export const Home = () => {
     }
     return (
         <>
-            <section className="py-4 py-lg-5 container">
+        <div className="main">
+        <p style={{fontSize:"30px",textAlign:"center", marginBottom:"-20px",fontWeight:"bolder"}}>Photo grapher's Showcase</p>
+        <section className="py-4 py-lg-5 container">
                 <div className="row justify-content-center alighn-item-center">
                     {data.map((item, indx) => {
                         return (
                             <div className="col-11 col-md-6 col-lg-3 mx-0 mb-4" >
-                                <div className="card" style={{ width: "18rem" }}>
+                                <div className="card card1" style={{ width: "18rem" }}>
                                     <img src={item.image} className="card-img-top" alt="..."
                                         onClick={() => getData(item.image)} />
                                     <div className="card-body mx-auto">
@@ -32,9 +34,14 @@ export const Home = () => {
 
                 </div>
             </section>
+            
             {
                 model === true ? <Model img={tempdata[1]} hide={()=> setModel(false)} />: ''
             }
+            </div>
+            
+        
+            
             
         </>
     )

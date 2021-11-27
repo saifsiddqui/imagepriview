@@ -1,0 +1,30 @@
+*{
+    font-family: 'Noto Sans', sans-serif;
+}
+
+.parent{
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    height: 100%;
+    background-color: rgba(0,0,0,0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card1{
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.8);
+}
+.main{
+    position: relative;
+}
+.image{
+    z-index: 100;
+    width: 1000px;
+    height: 500px;
+    object-fit: contain;
+}
+.child{
+    position: relative;   
+}
+
